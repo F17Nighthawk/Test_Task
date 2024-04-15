@@ -1,0 +1,121 @@
+2024-04-15 15:57:17.430 20563-20563 ImeTracker              com.serheniuk.currencyconversion     I  com.serheniuk.currencyconversion:8debcc08: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+2024-04-15 15:57:17.437 20563-20563 CurrencySe...Controller com.serheniuk.currencyconversion     D  onCreateView
+2024-04-15 15:57:17.465 20563-20563 CurrencySe...Controller com.serheniuk.currencyconversion     D  onAttach
+2024-04-15 15:57:17.519 20563-20563 WindowOnBackDispatcher  com.serheniuk.currencyconversion     W  sendCancelIfRunning: isInProgress=falsecallback=ImeCallback=ImeOnBackInvokedCallback@109122001 Callback=android.window.IOnBackInvokedCallback$Stub$Proxy@b4b2d76
+2024-04-15 15:57:17.520  1634-3505  CoreBackPreview         system_server                        D  Window{2569668 u0 com.serheniuk.currencyconversion/com.serheniuk.currencyconversion.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3d324aa, mPriority=0, mIsAnimationCallback=false}
+2024-04-15 15:57:17.676 20563-20563 ImeTracker              com.serheniuk.currencyconversion     I  com.serheniuk.currencyconversion:efb58f: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+2024-04-15 15:57:17.677  1634-4470  ImeTracker              system_server                        I  com.serheniuk.currencyconversion:efb58f: onCancelled at PHASE_SERVER_SHOULD_HIDE
+2024-04-15 15:57:17.678 20563-20563 ImeTracker              com.serheniuk.currencyconversion     I  com.serheniuk.currencyconversion:8debcc08: onHidden
+2024-04-15 15:57:17.694 20563-20563 ConverterController     com.serheniuk.currencyconversion     D  onDetach
+2024-04-15 15:57:17.696 20563-20563 ConverterController     com.serheniuk.currencyconversion     D  onDestroyView
+2024-04-15 15:57:17.705  3793-3793  GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.onStartInput():1943 onStartInput(EditorInfo{EditorInfo{packageName=com.serheniuk.currencyconversion, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+2024-04-15 15:57:17.715  1634-4342  PackageConfigPersister  system_server                        W  App-specific configuration not found for packageName: com.serheniuk.currencyconversion and userId: 0
+2024-04-15 15:57:35.655 20563-20563 AndroidRuntime          com.serheniuk.currencyconversion     E  FATAL EXCEPTION: main
+                                                                                                    Process: com.serheniuk.currencyconversion, PID: 20563
+                                                                                                    org.joda.money.IllegalCurrencyException: Unknown currency 'BTC'
+                                                                                                    	at org.joda.money.CurrencyUnit.of(CurrencyUnit.java:278)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.conversion.ConverterViewModel$openBuyCurrencySelection$1$1$1.invokeSuspend(ConverterViewModel.kt:237)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.conversion.ConverterViewModel$openBuyCurrencySelection$1$1$1.invoke(Unknown Source:8)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.conversion.ConverterViewModel$openBuyCurrencySelection$1$1$1.invoke(Unknown Source:4)
+                                                                                                    	at com.serheniuk.currencyconversion.core.architecture.BaseViewModel.updateState(BaseViewModel.kt:35)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.conversion.ConverterViewModel.access$updateState(ConverterViewModel.kt:29)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.conversion.ConverterViewModel$openBuyCurrencySelection$1$1.invokeSuspend(ConverterViewModel.kt:236)
+                                                                                                    	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+                                                                                                    	at kotlinx.coroutines.internal.DispatchedContinuationKt.resumeCancellableWith(DispatchedContinuation.kt:367)
+                                                                                                    	at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable(Cancellable.kt:30)
+                                                                                                    	at kotlinx.coroutines.intrinsics.CancellableKt.startCoroutineCancellable$default(Cancellable.kt:25)
+                                                                                                    	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:110)
+                                                                                                    	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+                                                                                                    	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+                                                                                                    	at kotlinx.coroutines.BuildersKt.launch(Unknown Source:1)
+                                                                                                    	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+                                                                                                    	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source:1)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.conversion.ConverterViewModel$openBuyCurrencySelection$1.invoke(ConverterViewModel.kt:232)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.conversion.ConverterViewModel$openBuyCurrencySelection$1.invoke(ConverterViewModel.kt:231)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.routers.ConverterRouter$openCurrencySelection$1$1.onCurrencySelected(ConverterRouter.kt:18)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.currencySelection.CurrencySelectionController.onCurrencySelected(CurrencySelectionController.kt:31)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.currencySelection.CurrencySelectionView$adapter$1.invoke(CurrencySelectionView.kt:25)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.stories.currencySelection.CurrencySelectionView$adapter$1.invoke(CurrencySelectionView.kt:24)
+                                                                                                    	at com.serheniuk.currencyconversion.converter.adapters.CurrencySelectionAdapter$onBindViewHolder$lambda$1$$inlined$setDebounceClickListener$default$1.onClick(ViewExtensions.kt:35)
+                                                                                                    	at android.view.View.performClick(View.java:7658)
+                                                                                                    	at android.view.View.performClickInternal(View.java:7635)
+                                                                                                    	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+                                                                                                    	at android.view.View$PerformClick.run(View.java:30167)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:958)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:205)
+                                                                                                    	at android.os.Looper.loop(Looper.java:294)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:8248)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+                                                                                                    	Suppressed: kotlinx.coroutines.DiagnosticCoroutineContextException: [StandaloneCoroutine{Cancelling}@8e30557, Dispatchers.Main.immediate]
+2024-04-15 15:57:35.661  1634-4527  ActivityTaskManager     system_server                        W    Force finishing activity com.serheniuk.currencyconversion/.MainActivity
+2024-04-15 15:57:35.674 20563-20563 Process                 com.serheniuk.currencyconversion     I  Sending signal. PID: 20563 SIG: 9
+2024-04-15 15:57:35.775  1634-4527  ActivityManager         system_server                        I  Process com.serheniuk.currencyconversion (pid 20563) has died: fg  TOP 
+2024-04-15 15:57:35.777  1634-1895  ImeTracker              system_server                        I  com.serheniuk.currencyconversion:6f9e85d5: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_REMOVE_CLIENT
+2024-04-15 15:57:35.777  1634-4342  WindowManager           system_server                        I  WIN DEATH: Window{2569668 u0 com.serheniuk.currencyconversion/com.serheniuk.currencyconversion.MainActivity}
+2024-04-15 15:57:35.777  1634-1895  ImeTracker              system_server                        I  com.serheniuk.currencyconversion:6f9e85d5: onCancelled at PHASE_SERVER_SHOULD_HIDE
+2024-04-15 15:57:35.779  1634-4342  InputManager-JNI        system_server                        W  Input channel object '2569668 com.serheniuk.currencyconversion/com.serheniuk.currencyconversion.MainActivity (client)' was disposed without first being removed with the input manager!
+2024-04-15 15:57:35.817  1634-3505  WindowManager           system_server                        W  Failed to deliver inset control state change to w=Window{2569668 u0 com.serheniuk.currencyconversion/com.serheniuk.currencyconversion.MainActivity EXITING}
+                                                                                                    android.os.DeadObjectException
+                                                                                                    	at android.os.BinderProxy.transactNative(Native Method)
+                                                                                                    	at android.os.BinderProxy.transact(BinderProxy.java:584)
+                                                                                                    	at android.view.IWindow$Stub$Proxy.insetsControlChanged(IWindow.java:479)
+                                                                                                    	at com.android.server.wm.WindowState.notifyInsetsControlChanged(WindowState.java:3818)
+                                                                                                    	at com.android.server.wm.InsetsStateController.lambda$notifyPendingInsetsControlChanged$3(InsetsStateController.java:369)
+                                                                                                    	at com.android.server.wm.InsetsStateController.$r8$lambda$8yykPRG1GyNq_J17QvL9d5xANMc(InsetsStateController.java:0)
+                                                                                                    	at com.android.server.wm.InsetsStateController$$ExternalSyntheticLambda2.run(R8$$SyntheticClass:0)
+                                                                                                    	at com.android.server.wm.WindowAnimator.executeAfterPrepareSurfacesRunnables(WindowAnimator.java:294)
+                                                                                                    	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:811)
+                                                                                                    	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:756)
+                                                                                                    	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+                                                                                                    	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+                                                                                                    	at com.android.server.wm.WindowManagerService.relayoutWindow(WindowManagerService.java:2386)
+                                                                                                    	at com.android.server.wm.Session.relayout(Session.java:254)
+                                                                                                    	at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:701)
+                                                                                                    	at com.android.server.wm.Session.onTransact(Session.java:183)
+                                                                                                    	at android.os.Binder.execTransactInternal(Binder.java:1358)
+                                                                                                    	at android.os.Binder.execTransact(Binder.java:1304)
+2024-04-15 15:57:35.855  1634-1867  WindowManager           system_server                        V      info={id=256 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{8ed1473 Task{589947d #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x43f31b2 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{e97bc20 Task{47dbf8f #1804 type=standard A=10322:com.serheniuk.currencyconversion}}} m=CLOSE f=NONE leash=Surface(name=Task=1804)/@0xa9cc8b4 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{a08db3f token=android.os.Binder@7e5e3e3})/@0x959c289 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+2024-04-15 15:57:35.895  1634-1872  WindowManager           system_server                        W  Failed to deliver inset control state change to w=Window{2569668 u0 com.serheniuk.currencyconversion/com.serheniuk.currencyconversion.MainActivity EXITING}
+                                                                                                    android.os.DeadObjectException
+                                                                                                    	at android.os.BinderProxy.transactNative(Native Method)
+                                                                                                    	at android.os.BinderProxy.transact(BinderProxy.java:584)
+                                                                                                    	at android.view.IWindow$Stub$Proxy.insetsControlChanged(IWindow.java:479)
+                                                                                                    	at com.android.server.wm.WindowState.notifyInsetsControlChanged(WindowState.java:3818)
+                                                                                                    	at com.android.server.wm.InsetsStateController.lambda$notifyPendingInsetsControlChanged$3(InsetsStateController.java:369)
+                                                                                                    	at com.android.server.wm.InsetsStateController.$r8$lambda$8yykPRG1GyNq_J17QvL9d5xANMc(InsetsStateController.java:0)
+                                                                                                    	at com.android.server.wm.InsetsStateController$$ExternalSyntheticLambda2.run(R8$$SyntheticClass:0)
+                                                                                                    	at com.android.server.wm.WindowAnimator.executeAfterPrepareSurfacesRunnables(WindowAnimator.java:294)
+                                                                                                    	at com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace(RootWindowContainer.java:811)
+                                                                                                    	at com.android.server.wm.RootWindowContainer.performSurfacePlacement(RootWindowContainer.java:756)
+                                                                                                    	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop(WindowSurfacePlacer.java:177)
+                                                                                                    	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:126)
+                                                                                                    	at com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement(WindowSurfacePlacer.java:115)
+                                                                                                    	at com.android.server.wm.WindowSurfacePlacer$Traverser.run(WindowSurfacePlacer.java:57)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:958)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:205)
+                                                                                                    	at android.os.Looper.loop(Looper.java:294)
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67)
+                                                                                                    	at com.android.server.ServiceThread.run(ServiceThread.java:46)
+2024-04-15 15:57:36.163  1634-1871  ActivityTaskManager     system_server                        W  Activity top resumed state loss timeout for ActivityRecord{1437eee u0 com.serheniuk.currencyconversion/.MainActivity t1804 f} isExiting}
+2024-04-15 15:57:36.478  1634-3505  WindowManager           system_server                        W  Exception thrown during dispatchAppVisibility Window{2569668 u0 com.serheniuk.currencyconversion/com.serheniuk.currencyconversion.MainActivity EXITING}
+                                                                                                    android.os.DeadObjectException
+                                                                                                    	at android.os.BinderProxy.transactNative(Native Method)
+                                                                                                    	at android.os.BinderProxy.transact(BinderProxy.java:584)
+                                                                                                    	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:546)
+                                                                                                    	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3287)
+                                                                                                    	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1299)
+                                                                                                    	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:409)
+                                                                                                    	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6950)
+                                                                                                    	at com.android.server.wm.ActivityRecord.postApplyAnimation(ActivityRecord.java:5648)
+                                                                                                    	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5590)
+                                                                                                    	at com.android.server.wm.Transition.finishTransition(Transition.java:1198)
+                                                                                                    	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:886)
+                                                                                                    	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:419)
+                                                                                                    	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:280)
+                                                                                                    	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:183)
+                                                                                                    	at android.os.Binder.execTransactInternal(Binder.java:1358)
+                                                                                                    	at android.os.Binder.execTransact(Binder.java:1304)
